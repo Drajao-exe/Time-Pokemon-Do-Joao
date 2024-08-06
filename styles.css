@@ -1,0 +1,229 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+*::-webkit-scrollbar{
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track{
+    background: #f1e9e9;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background-color: #eff780ad;
+    color: #333333;
+}
+
+body{
+    background-image: url(./src/mapa.png);
+    background: linear-gradient(#58a4fa, #8be1fc17), url(./src/mapa.png)
+}
+
+header ul{
+    display: flex;
+    justify-content:left;
+    gap: 30px;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header .titulo{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+header .menu{
+    color: #000000;
+    background-color: #fffb009f;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bolder;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .menu{
+        display: none;}
+}
+
+@media (max-width: 768px) {
+    .logo{
+        display: none;}
+}
+
+header .logo{
+    height: 50px;
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+header .logo:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    justify-content: center;
+    gap:0px;
+    padding: 15px;
+}
+
+main .listagem-pokemon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+main .cartao-pokemon{
+    background-color: #d8e3ec;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #1900ff;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover{
+    background-color: #96d9d6;
+}
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+main .cartao-pokemon .descricao{
+    text-align: justify;
+    margin-right: 5px;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 5px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+main .cartao-pokemon .gif{
+    width: 130px;
+    height: 130px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #00000060;
+}
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.tipo-psiquico{
+    background-color: #e269c8;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tipo-fada{
+    background-color: #ebb8eafb;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tipo-fogo{
+    background-color: #ee8130;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tipo-dragao{
+    background-color: #495e85;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tipo-lutador{
+    background-color: #a34e15;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tipo-voador{
+    background-color: #8ec9fa;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tipo-terra{
+    background-color: #dda45a;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tipo-eletrico{
+    background-color: #e6e93f;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tipo-agua{
+    background-color: #09bbf1;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
